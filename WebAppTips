@@ -1,0 +1,34 @@
+Lotsos' Tips for WebApp Dev
+
+So yeah basically you're looking at two paths
+1) the "full-stack" dev who focuses more on back-end stuff like programming web servers with node or an equivalent Python framework (Django for opinionated and flask otherwise afaik) and has a working knowledge of front end, enough to serve up pages that are usually styled via a framework like Bootstrap or Bulma
+2) the "full-stack" developer who would act more like a JavaScript engineer (see something like a MERN stack programmer) where youd learn react to build web apps with
+The former is the path that most older web developers took/take because its based on a simpler, easier to grasp web dev model
+The latter is more new-school, specialized, and considered a fast track to a job but in my experience confuses anyone and everyone who tries it LOL
+
+https://www.freecodecamp.org/news/how-to-learn-web-dev-in-2021-roadmap/
+
+https://flask.palletsprojects.com/en/2.0.x/
+flask is a simple framework to get started with webserver programming
+Essentially, a web server is a program that runs on a dedicated computer, on a specific port, that listens for requests and executes code based on different requests it receives
+If the up address of the server is X then going to the url "X:5000/" using a browser would mean that you're making a get request to port 5000 of the server and you're requesting the path "/"
+
+Learn how to:
+
+Set up a dev server on your computer with flask
+Do your python magic to get your data and transform it
+Dabble into creating your own apis for a little but don't get too sidetracked
+Serve your transformed data in basic HTML/CSS pages that are styled with bootstrap
+
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+Bootstrap on the frontend, flask on the webserver and MySQL or openSQL should get you pretty far in understanding the concepts of web dev
+
+https://youtube.com/watch?v=4sosXZsdy-s&feature=share
+Build & Deploy A Python Web App - webform and backend
+https://youtube.com/watch?v=w25ea_I89iM&feature=share
+
+D3.js and a map library should help you do any visualizations in the browser
+https://d3js.org/
+Leaflet should be good for maps
+https://leafletjs.com/
