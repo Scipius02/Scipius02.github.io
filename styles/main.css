@@ -31,7 +31,7 @@ body {
 }
 
 #turtle-icon {
-    background-image: url("turtleburgericon1-02.png");    /* thanks to Denise Tran for the image <3 */
+    background-image: url("../images/turtleburgericon1-02.png");    /* thanks to Denise Tran for the image <3 */
     background-size: 300% 300%;
 }
 
@@ -40,7 +40,7 @@ body {
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, .6);
 }
 
 .main-beige {
