@@ -26,8 +26,13 @@ body {
     justify-content: flex-end;
 }
 
-.navbar-toggler-icon {
-    background-image: "turtleburgericon1-02.png" !important;
+#nav-button {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#turtle-icon {
+    background-image: url("turtleburgericon1-02.png");    /* thanks to Denise Tran for the image <3 */
+    background-size: 300% 300%;
 }
 
 .header {   
@@ -38,32 +43,6 @@ body {
     background: rgba(0, 0, 0, 0.6);
 }
 
-@media screen and (min-width: 768px) {
-    .overlay {
-        position: relative;
-        min-height: 100%;
-        max-width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        top: 0;
-        background: #f2f6e9;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .overlay { 
-        position: relative;
-        min-height: 100%;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        top: 0;
-        background: #f2f6e9;
-    }
-}
-
-article {
-    display: flex;
+.main-beige {
+    background-color: antiquewhite;
 }
