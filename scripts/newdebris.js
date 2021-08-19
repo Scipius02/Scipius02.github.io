@@ -15,7 +15,7 @@ createNew.addEventListener("click", () => {
   let newDebrisLabel = document.createElement("label");
   newDebrisLabel.textContent = `Debris ${counter}`;
 
-  let deleteBtn = document.createElement("button");
+  let deleteBtn = document.createElement("button");   // DELETE BUTTON DEFINED HERE
   deleteBtn.setAttribute("for", field);
   deleteBtn.setAttribute("class", "btn btn-outline-light");
   deleteBtn.setAttribute("type", "button");
@@ -48,15 +48,19 @@ createNew.addEventListener("click", () => {
   debrisPage.appendChild(newDebrisField);
   newDebrisField.appendChild(newDebrisForm);
   newDebrisForm.appendChild(newDebrisLabel);
-  newDebrisLabel.appendChild(deleteBtn);
+  newDebrisForm.appendChild(deleteBtn);
 
   newDebrisField.appendChild(newDebrisSubfield);
   newDebrisSubfield.appendChild(newDebrisLI);
   newDebrisLI.appendChild(debrisType);
   newDebrisLI.appendChild(debrisWeight);
   newDebrisLI.appendChild(debrisDate);
+
+
 })
 
-deleteBtn.addEventListener("click", (e) => {
-  e.parentNode.remove();  // this doesn't work. i think it has to do with selector
+deleteBtn.addEventListener("click", (e) => {    // DELETEBTN NOT ACCESSIBLE OUTSIDE CREATENEW.CLICK
+    console.log(e);
+    console.log(typeof(e));
+    e.parentElement.parentElement.remove();  // this doesn't work. i think it has to do with selector
 })
