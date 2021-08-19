@@ -1,3 +1,6 @@
+// addeventlistener on "domContentLoaded"? must google to see if correct form
+// also figure out if we can turn this into a class
+
 const debrisPage = document.querySelector("#debris-form");
 const createNew = document.querySelector("#createNew");
 const checkedToday = document.querySelector("#checkboxTodaysDate");
@@ -10,13 +13,12 @@ createNew.addEventListener("click", () => {
   counter++;
 
   let newDebrisField = document.createElement("li");
-  let field = `field${counter}`;
-  newDebrisField.setAttribute("id", field);
+  newDebrisField.setAttribute("class", "fieldLI");
   let newDebrisLabel = document.createElement("label");
   newDebrisLabel.textContent = `Debris ${counter}`;
 
-  let deleteBtn = document.createElement("button");   // DELETE BUTTON DEFINED HERE
-  deleteBtn.setAttribute("for", field);
+  let deleteBtn = document.createElement("button");
+  //deleteBtn.setAttribute("for", field);
   deleteBtn.setAttribute("class", "btn btn-outline-light");
   deleteBtn.setAttribute("type", "button");
   deleteBtn.textContent = "x";
@@ -59,8 +61,8 @@ createNew.addEventListener("click", () => {
 
 })
 
-deleteBtn.addEventListener("click", (e) => {    // DELETEBTN NOT ACCESSIBLE OUTSIDE CREATENEW.CLICK
-    console.log(e);
-    console.log(typeof(e));
-    e.parentElement.parentElement.remove();  // this doesn't work. i think it has to do with selector
-})
+debrisPage.addEventListener("click", (e) => {    // event bubbling from parent down into target
+    if(e.target && e.target.getAttribute("class") === "btn btn-outline-light"){
+      e.target.parentNode.parentNode.remove();
+    };
+  })
