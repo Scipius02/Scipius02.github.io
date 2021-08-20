@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- https://websitesetup.org/bootstrap-tutorial-for-beginners/ -->
         <link rel="stylesheet" href="/home/wicsi/.npm-global/lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+        <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+        
         <link rel="stylesheet" type="text/css" href="styles/main.css">
     </head>
     
@@ -81,7 +85,8 @@
                   <div class="row py-1 justify-content-md-center">
                     <div class="col col-md-auto">
                       <label class="form-label" for="sightingLocation">Location</label>
-                      <input id="sightingLocation" class="form-control" type="text" placeholder="" value="" required="">
+                      <div id="map"></div>
+                      <input id="sightingLocation" class="form-control" type="text" placeholder="Optional written description" value="" required="">
                     </div>
                   </div>
 
@@ -116,5 +121,5 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="/home/wicsi/node_modules/@popperjs/core/dist/umd/popper.js"></script>
         <script src="/home/wicsi/.npm-global/lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	</body>
+      </body>
 </html>

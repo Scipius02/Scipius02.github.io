@@ -40,3 +40,15 @@ body {
     background-color: #393f4d;
     color: antiquewhite;
 }
+
+#map {
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 576px) {
+    #map {
+    width: 400px;
+    height: 400px;
+  }
+}

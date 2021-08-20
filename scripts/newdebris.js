@@ -61,6 +61,7 @@ createNew.addEventListener("click", () => {
 
 })
 
+//https://davidwalsh.name/event-delegate
 debrisPage.addEventListener("click", (e) => {    // event bubbling from parent down into target
     if(e.target && e.target.getAttribute("class") === "btn btn-outline-light"){
       e.target.parentNode.parentNode.remove();
